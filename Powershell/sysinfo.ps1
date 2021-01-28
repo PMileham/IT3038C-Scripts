@@ -10,7 +10,7 @@ $hostname = hostname
 
 $date = Get-Date
 
-$Body = "This machines IP is $ip. User is $env:username. Hostname is $hostname. Today's date is $date"
+$Body = "This machines IP is $ip. User is $env:username. Hostname is $hostname. Powershell version $HOST.version.major. Today's date is $date"
 
 write-host($Body)
 
