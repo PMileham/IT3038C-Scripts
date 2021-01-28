@@ -6,11 +6,13 @@ write-host(getip)
 $ip = getip
 write-host("This machines IP Address is: $ip")
 
+$Vers = Get-Host | select-object version
+
 $hostname = hostname
 
 $date = Get-Date
 
-$Body = "This machines IP is $ip. User is $env:username. Hostname is $hostname. Powershell version $HOST.version.major. Today's date is $date"
+$Body = "This machines IP is $ip. User is $env:username. Hostname is $hostname. Powershell version is $Vers. Today's date is $date"
 
 write-host($Body)
 
