@@ -2,3 +2,4 @@
 .pycache
 npm
 node_modules
+*venv*
